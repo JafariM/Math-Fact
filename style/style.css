@@ -1,0 +1,264 @@
+body{
+  background-image: url("../img/Background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color:ghostwhite !important;
+  height: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img#logo{
+  float: left;
+  margin-top: -35px;
+}
+hr{
+  background-color:ghostwhite;
+}
+/* style the navigation link */
+.topnav{
+  float: right;
+  margin-top:10px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2 !important;
+  text-align: center;
+  border-radius: 5px;
+  padding: 14px 16px;
+  text-decoration: none !important;
+  font-size: 17px;
+}
+.topnav .icon {
+  display: none;
+}
+#dropdown {
+  float: left;
+  overflow: hidden;
+  border-radius: 5px;
+}
+#dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+#dropdown-content a {
+  float: none;
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.topnav a:hover, #dropdown:hover .dropbtn {
+  background-color: hsl(268, 94%, 51%);
+}
+#dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#dropdown:hover #dropdown-content {
+  display: block ;
+}
+/* When the screen is less than 600 pixels wide*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), #dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  #goBtn{
+    margin-top: 10px;
+  }
+}
+
+/* The "responsive" class is added to display the links vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive #dropdown {float: none;}
+  .topnav.responsive #dropdown-content {position: relative;}
+  .topnav.responsive #dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* quote */
+section#quote{
+  clear: both;
+  width: 50%;
+  margin: 0 auto;
+}
+section#quote h4,p{
+  text-align:justify;
+}
+section#quote span{
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+/* main content */
+section#content{
+  width: 70%;
+  margin:30px auto;
+}
+section#content button{
+  background-color: rgb(196, 148, 227);
+  display: block;
+  width: 80%;
+  margin: 2rem auto 1rem auto;
+  padding : 8px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: -5px 5px 4px rgb(116, 118, 163);
+  border: none;
+}
+.gameBtn p{
+  text-align: center;
+}
+section#content a{
+  text-decoration: none;
+  color:black;
+}
+/* footer */
+footer{
+  margin-top: 40px;
+  padding: 40px;
+}
+span#icons{
+  float: right;
+  margin-right: 20px;
+}
+span#icons i{
+  margin:5px;
+  color: gainsboro;
+}
+span#footerLogo{
+  margin-left:20px;
+}
+
+/* section for About Us page */
+section#center{
+  clear: both;
+  margin: 20px auto;
+  text-align: center;
+  padding: 5px;
+  width: 50%;
+  min-height: 55vh;
+  line-height: 2rem;
+}
+
+/* login form */
+
+button#loginBtn{
+  margin-right: 10%;
+}
+p#reginsterLink , p#loginLink{
+  clear: both;
+}
+section#center h2{
+  margin-bottom: 2rem;
+}
+/* register form */
+div#registerForm{
+  display: none;
+}
+
+/* math fact */
+span.bold{
+  font-weight: bold;
+}
+section#center ol{
+  text-align: left;
+  margin-top: 9rem;
+  font-size: 1.3rem;
+}
+div#question{
+  font-weight:900;
+  font-size: 2rem;
+  letter-spacing: 0.8rem;
+}
+input#answer{
+  width:20%;
+  height: 40px;
+  font-size: 1.3rem;
+  margin: 25px auto;
+  top: 30px;
+  text-align: center;
+  border:2px solid black;
+}
+table{
+  width: 60%;
+  margin: 0 auto 30px auto;
+
+}
+table td{
+  width: 10%;
+  text-align: center;
+  padding: 5px;
+}
+table td button{
+  font-family: 'Orbitron', sans-serif;
+  background-color: #64278f;
+  color: white;
+  border: solid black 0.5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 70%;
+  outline: none;
+}
+table dd button:active {
+ background: #e5e5e5;
+ -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+ -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+ box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+p#score, p#time{
+  width: 60%;
+  margin-left:20%;
+}
+/* modal */
+div.modal-body{
+  height: 250px;
+}
+div#resultModal{
+  color: black;
+}
+div#finalScore{
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+
+
+

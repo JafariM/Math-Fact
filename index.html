@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style/normalize.css">
+<link rel="stylesheet" href="style/style.css">
+<script src="https://kit.fontawesome.com/ab900783c0.js" crossorigin="anonymous"></script>
+<script>
+window.addEventListener('load', function () {
+  // Display quote every 10 sec
+  const quotes = [
+    '“The only way to learn mathematics is to do mathematics.”',
+    '“Ive never had more fun than I do playing Anagram Hunt. It is the best game ever Invented!.” ',
+    '“Life is a dream for the wise, a game for the fool, a comedy for the rich, a tragedy for the poor.”'
+  ];
+  const authors = ['Paul Halmos', 'Justin Jest', 'Sholom Aleichem'];
+  const quotePar = document.getElementById('quotePar');
+  const authorSpn = document.getElementById('author');
+  let counter = 0;
+
+  function changeQuote() {
+    quotePar.innerHTML = quotes[counter];
+    authorSpn.innerHTML = authors[counter];
+    counter++;
+    if (counter >= quotes.length) {
+      counter = 0;
+    }
+  }
+  setInterval(changeQuote, 10000);
+  changeQuote();
+});
+//Toggle navbar links when screen size is 600px
+function toggleDropdown() {
+  let topNav = document.getElementById("myTopnav");
+  if (topNav.className === "topnav") {
+    topNav.className += " responsive";
+  } else {
+    topNav.className = "topnav";
+  }
+}
+</script>
+<title>Home</title>
+</head>
+<body>
+  <header>
+    <img  id="logo"src="img/logo.png">
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div id="dropdown">
+          <button class="dropbtn">Games
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdown-content">
+            <a href="games/math-facts.html">Math Fact</a>
+            <a href="games/anagram-hunt.html">Anagram Hunt</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleDropdown()">&#9776;</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="quote">
+      <h4>Happy Clients Say...</h4>
+      <p id="quotePar"></p>
+      <span id="author"></span>
+    </section>
+
+    <section id="content">
+      <button  class="gameBtn" onclick="window.location.href ='games/math-facts.html'">
+        <h4>Math Facts</h4>
+        <p>If you want to try your math skill, then give a try this game</p>
+      </button>
+      <button class="gameBtn" onclick="window.location.href = 'games/anagram-hunt.html'">
+        <h4>Anagram Hunt</h4>
+        <p>This game is not ready yet, but Coming Soon!</p>
+      </button>
+    </section>
+  </main>
+  
+  <footer>
+    <hr>
+    <span id="footer-logo">&copy;2021 Math Game</span>
+    <span id="icons">
+      <a href="contact-us.html">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank">
+        <i class="fab fa-facebook-f fa-2x"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a> 
+    </span>
+  </footer>
+</body>
+</html>

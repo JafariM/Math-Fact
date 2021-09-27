@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.autoIndent": "brackets",
+  "html.format.preserveNewLines": false,
+  "html.format.enable": false
+}
